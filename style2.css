@@ -1,0 +1,344 @@
+* {
+    margin     : 0;
+    padding    : 0;
+    box-sizing : border-box;
+    font-family: 'mallory', sans-serif!important;
+    font-size  : 1.5vmin;
+}
+
+html, body {
+    height: 100%;
+    width : 100%;
+}
+
+body {
+    background           : /*url("https://w.wallhaven.cc/full/je/wallhaven-je82zp.jpg")*/ rgb(11, 113, 181);
+    background-size      : cover;
+    background-repeat    : no-repeat;
+    background-attachment: fixed;
+    background-position  : center bottom;
+    padding              : 1rem;
+    overflow-y: scroll;
+}
+
+.maincontainer {
+    width  : 100%;
+    height : 50%;
+    display: inline-flexbox;
+    box-shadow: 0 0 0.5rem black;
+}
+
+.maincontainer > .video {
+    width : 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.maincontainer > .video > #bg {
+    width     : 100%;
+    height    : 100%;
+    object-fit: fill;
+    z-index   : 1;
+}
+
+.positionnavbar {
+    width : 100%;
+    height: fit-content;
+    transform: translateY(-32.40rem);
+}
+
+.navbarbox {
+    width          : 100%;
+    height         : fit-content;
+    padding        : 1.25rem;
+    display        : flex;
+    justify-content: space-between;
+    align-items    : center;
+    backdrop-filter: blur(1rem);
+    box-shadow     : 0 0 1rem black;
+}
+
+.box1 {
+    width          : auto;
+    height         : auto;
+    display        : flex;
+    margin-left    : 4rem;
+    justify-content: center;
+    align-items    : center;
+}
+
+#menu {
+    display: none;
+}
+
+.buttonpos {
+    width          : auto;
+    height         : auto;
+    display        : inline-flexbox;
+    justify-content: center;
+    align-items    : center;
+    transform      : translate(0.95rem,1.5rem);
+    transition: 500ms;
+}
+
+.l1 {
+    width        : 3rem;
+    height       : 0.25rem;
+    background   : white;
+    border-radius: 0.5rem;
+    box-shadow   : 0 0 0.25rem white;
+    transition   : 500ms;
+}
+
+.l2 {
+    width        : 3rem;
+    height       : 0.25rem;
+    background   : white;
+    border-radius: 0.5rem;
+    box-shadow   : 0 0 0.25rem white;
+    transition   : 500ms;
+    margin-top: 0.5rem;
+}
+
+#menu:checked + label .l1 {
+    transform: rotate(45deg) translate(0, 0.5rem);
+}
+
+#menu:checked + label .l2 {
+    transform: rotate(-45deg) translate(0, -0.5rem);
+}
+
+#menu:checked + label .buttonpos {
+    transform: translate(1.25rem,1.5rem);
+}
+
+.menu {
+    width          : 5rem;
+    height         : 4rem;
+    backdrop-filter: blur(1rem);
+    border-radius  : 0.5rem;
+    box-shadow     : 0 0 0.25rem white;
+    justify-content: center;
+    align-items    : center;
+}
+
+.menu:hover {
+    background: rgba(255, 255, 255, 0.2);
+    border    : none;
+    scale     : 1.1;
+    cursor    : pointer;
+    transition: 500ms;
+}
+
+.box2 {
+    width      : auto;
+    height     : auto;
+    display    : flex;
+    margin-left: 4rem;
+    transform: translateX(6.20rem);
+}
+
+.box2 > h1 {
+    font-size: 3rem;
+    color    : white;
+    animation: rgb linear infinite 5s;
+    text-shadow: 0 0 1vw currentColor;
+}
+
+@keyframes rgb {
+    0% {
+        color: rgb(255, 0, 0);
+    }
+    25% {
+        color: rgb(255, 255, 0);
+    }
+    50% {
+        color: rgb(0, 255, 0);
+    }
+    75% {
+        color: rgb(0, 0, 255);
+    }
+    100% {
+        color: rgb(255, 0, 255);
+    }
+    
+}
+
+.box3 {
+    width          : auto;
+    height         : auto;
+    display        : flex;
+    margin-left    : 4rem;
+    justify-content: center;
+    align-items    : center;
+}
+
+.search-bar {
+    width          : 20rem;
+    height         : 4rem;
+    border-radius  : 0.5rem;
+    background     : none;
+    border         : none;
+    backdrop-filter: blur(1rem);
+    box-shadow     : 0 0 0.25rem white;
+    color          : white;
+    font-size      : 1.25rem;
+    text-align     : center;
+    transition     : 500ms;
+}
+
+.search-bar:hover {
+    background: rgba(255, 255, 255, 0.2);
+    border    : none;
+    scale     : 1.05;
+    cursor    : pointer;
+}
+
+.search-bar:active {
+    border: none;
+    color : white;
+}
+
+.search-bar:focus {
+    border: none;
+    color : white;
+    cursor: text;
+}
+
+.headtext > h1 {
+    font-size  : 5rem;
+    color      : white;
+    text-shadow: 0 0 1vw black;
+    transform: translate(1rem,-13rem);
+}
+
+.suhay {
+    width     : 100%;
+    height    : auto;
+    padding   : 1rem;
+    background: rgb(216, 225, 237);
+    border    : 1rem solid rgb(146, 178, 222);
+    display   : inline-flexbox;
+    text-align: center;
+}
+
+.suhay > h1 {
+    margin: 1rem    ;
+    font-size: 3rem;
+}
+
+.suhay > img {
+    width        : inherit;
+    height       : inherit;
+    border-radius: 0.5rem;
+    box-shadow   : 0 0 0.5rem black;
+}
+
+.news, .news2, .news3, .news4, .news5, .news6, .news7 {
+    background: rgb(216, 225, 237);
+    width     : 100%;
+    height    : auto;
+    padding   : 1rem;
+    border    : 1rem solid rgb(146, 178, 222);
+    display   : inline-flex;
+    transition: 500ms;
+    scale: 0.95;
+}
+
+
+.news3:hover,.news2:hover, .news:hover, .news4:hover, .news5:hover, .news6:hover, .news7:hover {
+    scale: 1;
+}
+
+.news > h1 {
+    font-size: 2rem;
+}
+
+.news > p {
+    font-size : 1.20rem;
+    text-align: justify;
+}
+
+.yt1, .img {
+    width : 50rem;
+    height: 30rem;
+}
+
+.yt1 > iframe, .img > img {
+    width        : inherit;
+    height       : inherit;
+}
+
+ .divider {
+    background: rgb(146, 178, 222);
+    color: rgb(146, 178, 222);
+    width        : 1rem;
+    height       : inherit;
+    border-radius: 0.5rem;
+    box-shadow   : 0 0 0.25rem black;
+    margin-left  : 1.5rem;
+    margin-right: 1.5rem;
+}
+
+.textbox {
+    border     : 1rem solid rgb(146, 178, 222);
+    padding    : 1rem;
+    width      : 70rem;
+    height     : 30rem;
+    text-align : justify;
+    overflow-y : scroll;
+    white-space: nowrap;
+}
+
+.news > .textbox > h1,
+.news2 > .textbox > h1,
+.news3 > .textbox > h1,
+.news4 > .textbox > h1,
+.news5 > .textbox > h1,
+.news6 > .textbox > h1,
+.news7 > .textbox > h1 {
+    font-size: 3rem;
+}
+
+.news > .textbox > pre,
+.news2 > .textbox > pre,
+.news3 > .textbox > pre,
+.news4 > .textbox > pre,
+.news5 > .textbox > pre,
+.news6 > .textbox > pre,
+.news7 > .textbox > pre {
+    font-size: 1.5rem;
+}
+
+.categ {
+    width        : 20rem;
+    height       : auto;
+    transform    : translate(-50rem,5rem);
+    border-radius: 0.5rem;
+    box-shadow   : 0 0 1vw black;
+    display      : inline-flexbox;
+    transition   : 500ms;
+    background   : rgb(146, 178, 222, 0.5);
+    padding: 1.20rem;
+    
+}
+
+#menu:checked + label .categ {
+    transform      : translate(0rem,5rem);
+}
+
+.boxer {
+    width          : 100%;
+    height         : 2.5rem;
+    justify-content: space-between;
+    text-align     : center;
+    align-content  : center;
+    transition     : 500ms;
+    color          : white;
+    padding-top    : 0.5rem;
+    padding-bottom : 0.5rem;
+}
+
+.boxer:hover {
+    scale: 1.1;
+}
